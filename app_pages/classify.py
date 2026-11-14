@@ -9,6 +9,7 @@ import pandas as pd
 import streamlit as st
 
 from fashion3d import ui
+from fashion3d.builder import DETAILS, LOWER, NECKS, PRESETS, build
 from fashion3d.classes import CLASS_NAMES, display
 from fashion3d.dataset import DATA_DIR, read_manifest
 from fashion3d.maya_bridge import MayaBridge
@@ -17,10 +18,11 @@ from fashion3d.render import render_thumbnail
 
 st.title("Fashion3D: what type of garment is this 3D asset?")
 st.markdown(
-    "Pick a 3D asset (live from **Maya**, an uploaded file, or a test asset). The app cleans it up "
-    "into a **32 × 32 × 32 voxel grid** with values between 0 and 1, sends it to a **3D convolutional "
-    "neural network** trained on garments generated in Maya, and shows the predicted fashion type, "
-    "how confident the model is, and the full probability breakdown for all 8 types."
+    "**Design your own 3D garment** with the sliders (the 3D version of drawing a digit), or pick one live from "
+    "**Maya**, upload a file, or choose a test asset. The app cleans it up into a **32 × 32 × 32 voxel grid** "
+    "with values between 0 and 1, sends it to a **3D convolutional neural network** trained on garments "
+    "generated in Maya, and shows the predicted fashion type, how confident the model is, and the full "
+    "probability breakdown for all 8 types. Everything updates live."
 )
 
 device = st.session_state.get("device") or "cpu"
@@ -57,17 +59,84 @@ maya_live = bool(ss.get("maya_live"))
 has_mayapy = bool(ss.get("mayapy"))
 source = st.segmented_control(
     "3D asset source",
-    ["Test assets", "Maya scene (live)", "Upload a file", "Maya panel history"],
-    default="Test assets", key="source",
+    ["Design a garment", "Test assets", "Maya scene (live)", "Upload a file", "Maya panel history"],
+    default="Design a garment", key="source",
     format_func=lambda s: f":material/lock: {s}" if s == "Maya scene (live)" and not maya_live else s,
 )
-source = source or "Test assets"
+source = source or "Design a garment"
 if ss.get("last_source") != source:     # switching source starts fresh
     ss.current = None
     ss.last_source = source
 
+# ---- garment designer state (kept even while its widgets are hidden) ----
+D_KEYS = sorted({k for p in PRESETS.values() for k in p} - {"mode"}) + ["mode"]
+
+
+def load_preset():
+    p = {**PRESETS["shoes"], **PRESETS["tshirt"], **PRESETS[ss.d_preset]}
+    for k in D_KEYS:
+        ss[f"d_{k}"] = p[k]
+
+
+if "d_preset" not in ss:
+    ss.d_preset = "tshirt"
+    load_preset()
+for k in [k for k in ss.keys() if str(k).startswith("d_")]:
+    ss[k] = ss[k]                                   # keep slider values when they are not on screen
+
 with st.container(border=True):
-    if source == "Test assets":
+    if source == "Design a garment":
+        st.caption("Build a garment with the sliders. The model re-classifies it every time you change something. "
+                   "Start from a preset, then push it towards another type and watch the prediction change.")
+        c1, c2, c3 = st.columns([2, 2, 1], vertical_alignment="bottom")
+        c1.selectbox("Start from", list(PRESETS), key="d_preset", format_func=display, on_change=load_preset)
+        c2.segmented_control("Build", ["clothing", "footwear"], key="d_mode", format_func=str.capitalize)
+        c3.button("Reset", icon=":material/restart_alt:", on_click=load_preset, width="stretch")
+        if ss.d_mode == "footwear":
+            a, b = st.columns(2)
+            a.slider("Shoe length (cm)", 22, 34, key="d_shoe_len")
+            a.slider("Upper height (cm)", 4.0, 9.0, step=0.5, key="d_shoe_height")
+            b.slider("Boot shaft (cm, 0 = no boot)", 0, 25, key="d_boot_shaft")
+            t1, t2 = b.columns(2)
+            t1.toggle("Pair", key="d_pair")
+            t2.toggle("Heel", key="d_heel")
+        else:
+            a, b, c = st.columns(3)
+            with a:
+                st.markdown("**Body**")
+                st.slider("Body length (cm, 0 = none)", 0, 130, key="d_body_len")
+                st.slider("Width (cm)", 30, 70, key="d_body_width")
+                st.slider("Depth (front to back)", 0.4, 1.0, step=0.02, key="d_body_depth")
+                st.slider("Hem flare", 0.8, 1.6, step=0.02, key="d_flare")
+            with b:
+                st.markdown("**Sleeves and neck**")
+                st.slider("Sleeve length (cm, 0 = none)", 0, 75, key="d_sleeve_len")
+                st.slider("Sleeve width (cm)", 5.0, 14.0, step=0.5, key="d_sleeve_width")
+                st.slider("Sleeve angle (0 = straight out)", 10, 85, key="d_sleeve_angle")
+                st.segmented_control("Neck", NECKS, key="d_neck")
+            with c:
+                st.markdown("**Lower part**")
+                st.segmented_control("Below the body", LOWER, key="d_lower")
+                if ss.d_lower == "skirt":
+                    st.slider("Skirt length (cm)", 20, 110, key="d_skirt_len")
+                    st.slider("Skirt flare", 1.0, 2.8, step=0.05, key="d_skirt_flare")
+                    st.slider("Pleats", 0.0, 0.1, step=0.01, key="d_pleats")
+                elif ss.d_lower == "legs":
+                    st.slider("Leg length (cm)", 50, 110, key="d_leg_len")
+                    st.slider("Leg width (cm)", 7.0, 14.0, step=0.5, key="d_leg_width")
+                    st.slider("Leg taper", 0.5, 1.0, step=0.02, key="d_leg_taper")
+            st.pills("Details", DETAILS, selection_mode="multi", key="d_details")
+        params = {k: ss[f"d_{k}"] for k in D_KEYS}
+        params["neck"] = params["neck"] or "none"
+        params["lower"] = params["lower"] or "none"
+        params["mode"] = params["mode"] or "clothing"
+        try:
+            v, f = build(params)
+            set_current(f"My design (started from {display(ss.d_preset)})", v, f, "Design a garment")
+        except ValueError as e:
+            st.warning(str(e), icon=":material/info:")
+
+    elif source == "Test assets":
         st.caption("Garments the model has never seen: the held-out test set plus the 5 assignment test styles.")
         rows = read_manifest("test") + read_manifest("styles")
         if not rows:
@@ -175,10 +244,14 @@ if cur.get("true_label"):
     head.badge(f"Label: {display(cur['true_label'])}", icon=":material/sell:", color="gray")
     head.badge("Correct" if ok else "Wrong", icon=":material/check:" if ok else ":material/close:",
                color="green" if ok else "red")
-if head.button("Clear", icon=":material/restart_alt:"):
+def clear_all():
     ss.current = None
     ss.uploader_key += 1
-    st.rerun()
+    if ss.get("source") in (None, "Design a garment"):
+        load_preset()                       # Clear in the designer = back to the chosen preset
+
+
+head.button("Clear", icon=":material/restart_alt:", on_click=clear_all)
 st.caption(f"Source: {cur['source']} · {info['n_vertices']:,} vertices · {info['n_faces']:,} triangles · "
            f"inference {ms:.0f} ms on {device}{' with 8-view TTA' if tta > 1 else ''}")
 

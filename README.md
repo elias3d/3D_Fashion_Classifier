@@ -22,7 +22,7 @@ Fashion3D:  Maya asset  -> surface points -> center+scale -> voxelize 32x32x32 (
 >   CUDA version of PyTorch if there is one (~3 GB), otherwise the CPU version (~200 MB). Then the app opens at
 >   http://localhost:8517. Needs [Python 3.10–3.12](https://www.python.org/downloads/). Maya is optional.
 
-![Streamlit app classifying a thin coat](screenshots/app_classify.png)
+![Designing a garment with sliders and classifying it live](screenshots/app_designer.png)
 
 ---
 
@@ -38,14 +38,15 @@ Fashion3D:  Maya asset  -> surface points -> center+scale -> voxelize 32x32x32 (
 | **Training** (`scripts/train.py`) | Trains on GPU (CUDA) or CPU, saves `models/voxel_cnn.pt`. It can be started from the Maya panel, which shows a live progress bar and log. |
 | **Inference server** (`scripts/serve.py`) | Maya sends a mesh over local HTTP and gets the prediction back. (Maya has its own Python, and installing PyTorch + CUDA into it is fragile, so the model runs next to Maya instead.) |
 | **Maya panel** (`maya_tools/panel.py`) | Dockable panel with 4 tabs: **Dataset**, **Label**, **Train**, **Classify**. Classify shows thumbnails, confidence and probability bars, writes the result onto the node, and can build a voxel "model view" twin next to the asset. |
-| **Streamlit app** (`app.py`) | Title and description, 4 input sources (test assets, **live Maya scene through the command port**, file upload incl. FBX, Maya panel history), prediction, confidence, top 3, probability chart, and "what the model sees" (3D voxel grid, X-ray views, raw 32 × 32 slices and the number matrix). |
+| **Garment designer** (`fashion3d/builder.py`) | The 3D version of the drawing canvas: sliders and toggles (body length, width, flare, sleeves, neck, skirt or legs, details, or footwear) build a 3D garment in the browser with numpy, no Maya needed. It uses the same recipe as the Maya generator, so the model recognises its garments. |
+| **Streamlit app** (`app.py`) | Title and description, 5 input sources (**design a garment**, test assets, **live Maya scene through the command port**, file upload incl. FBX, Maya panel history), prediction, confidence, top 3, probability chart, and "what the model sees" (3D voxel grid, X-ray views, raw 32 × 32 slices and the number matrix), all updating live. |
 
 ### Original requirement → my 3D version
 
 | Assignment requirement | In this project |
 |---|---|
 | Title & description | Title + explanation at the top of the Classify page |
-| Drawing canvas | A 3D asset instead: picked live from the open Maya scene, uploaded (FBX/OBJ/STL/PLY/GLB), or chosen from the test sets |
+| Drawing canvas | **Design a garment**: an interactive 3D "canvas" where you shape a garment with sliders and toggles and see it in 3D (drag to rotate) while the prediction updates. You can also pick an asset live from the open Maya scene, upload one (FBX/OBJ/STL/PLY/GLB), or choose one from the test sets |
 | Grayscale, resize to 28 × 28, normalize 0–1 | Surface sampling, center + scale, voxelize to **32 × 32 × 32**, log-density ÷ max → **0–1**, input shape `(1, 1, 32, 32, 32)` |
 | Model prediction for all 10 digits | Softmax probabilities for all **8 fashion types** |
 | Predicted digit, confidence, chart | Predicted type, confidence (and lead over #2), top 3, bar chart of all 8 |
@@ -61,6 +62,11 @@ Fashion3D:  Maya asset  -> surface points -> center+scale -> voxelize 32x32x32 (
 - [x] "How it works" page explaining the CNN pipeline
 - [x] Better preprocessing for off-center / oddly sized inputs: centering + scaling makes position and units irrelevant, and stronger augmentation fixed slim and bulky garments (see testing)
 - [x] Extra: GPU/CPU choice, rotation test-time augmentation (8 views), FBX support through headless Maya, two-way Maya ↔ Streamlit link
+
+**What the model sees:** a thin coat from the test styles, with the 32 × 32 × 32 voxel grid, X-ray views and a
+raw slice of values between 0 and 1:
+
+![Classifying a thin coat, with what the model sees](screenshots/app_classify.png)
 
 ![Model and dataset page](screenshots/app_model.png)
 
@@ -198,6 +204,24 @@ its width and depth scaled randomly between 0.55× and 1.6× (log-uniform), so t
 (sleeves, collars, the split between two legs, a flared hem) instead of proportions. Thin went from 72.5% to 100%,
 and thick from 90% to 100%, with the same test accuracy.
 
+### Playing with the garment designer
+
+Starting from a preset and changing one thing at a time shows where the model draws the line between types:
+
+| What I did in the designer | Prediction |
+|---|---|
+| T-shirt preset | T-shirt 98.7% |
+| … sleeves lengthened from 19 to 60 cm | **Shirt 53.8%**: unsure, right on the border |
+| … sleeves angled down (70°) | Shirt 90.9% |
+| … body made 110 cm long and flared | **Coat 95.3%** |
+| Pants preset, then *skirt* instead of *legs* below | Skirt 87.7% |
+| Dress preset, then body length set to 0 | Skirt 85.1% |
+| … skirt shortened to 20 cm | Skirt 69.8%: confidence drops for a shape it never saw |
+| Shoes preset, then a 20 cm boot shaft | Shoes 98.4% |
+
+All 8 presets are classified correctly (92–99%). The T-shirt → shirt → coat sequence shows the model really
+uses sleeve length, sleeve angle and body length, the same features a person would use.
+
 ### Live test inside Maya 2025
 
 I ran the whole loop in a real Maya 2025 session (not just headless):
@@ -300,7 +324,7 @@ never retrain unless I click *Train* again.
 | `app.py` + `app_pages/` | The Streamlit application |
 | `requirements.txt` | Packages needed to run the app |
 | `README.md` | This file: setup, explanation, testing results, reflection |
-| `screenshots/` | The app running (classify, model, live Maya mode) and the panel + voxel twins in Maya 2025 |
+| `screenshots/` | The app running (garment designer, classify, model, live Maya mode) and the panel + voxel twins in Maya 2025 |
 | `maya_tools/`, `install_maya.py` | Maya panel and tools |
 | `models/` | Trained model and metrics (so it runs without retraining) |
 

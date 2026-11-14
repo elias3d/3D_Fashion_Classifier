@@ -14,7 +14,7 @@ Fashion3D:  Maya asset  -> surface points -> center+scale -> voxelize 32x32x32 (
 ```
 
 > ### How to open it
-> - **Online, no install:** **[open the live app](ONLINE_APP_URL)**. Works in any browser. The Maya features are
+> - **Online, no install:** **https://3dfashionclassifier.streamlit.app/**. Works in any browser. The Maya features are
 >   locked there, because Maya can only connect to an app running on the same computer.
 > - **On your computer:** unzip, then double-click **`run_windows.bat`** (Windows) or run **`bash run_mac_linux.sh`**
 >   (Mac / Linux). The first run installs everything into a private Python environment (on Windows in

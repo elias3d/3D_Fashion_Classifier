@@ -1,0 +1,14 @@
+# Works on any machine (Windows / Mac / Linux, Python 3.10 - 3.12), and on Streamlit Community Cloud.
+# PyTorch CPU build (~200 MB). Have an NVIDIA GPU? Use requirements-gpu.txt instead.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.5
+
+numpy>=1.26
+streamlit>=1.50
+altair>=5
+plotly>=5.20
+pandas>=2.0
+pillow>=10
+trimesh>=4.0          # reads OBJ / STL / PLY / GLB uploads (FBX goes through Maya)
+
+# Maya side: Autodesk Maya 2025+ (uses its own Python + numpy, nothing to install)

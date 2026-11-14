@@ -1,0 +1,29 @@
+{
+  "upright": {
+    "accuracy": 1.0,
+    "mean_confidence": 0.9609879665076733,
+    "top_mistakes": {}
+  },
+  "lying down (90 deg X)": {
+    "accuracy": 0.08333333333333333,
+    "mean_confidence": 0.7988926414400339,
+    "top_mistakes": {
+      "tshirt->shoes": 30,
+      "pants->shoes": 30,
+      "pullover->shoes": 30,
+      "dress->shoes": 30,
+      "coat->shoes": 30
+    }
+  },
+  "upside down (180 deg X)": {
+    "accuracy": 0.05416666666666667,
+    "mean_confidence": 0.5383605555941661,
+    "top_mistakes": {
+      "dress->pants": 29,
+      "pullover->tshirt": 28,
+      "shirt->pullover": 26,
+      "tshirt->shoes": 25,
+      "shoes->tshirt": 25
+    }
+  }
+}

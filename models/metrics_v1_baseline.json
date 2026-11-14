@@ -1,0 +1,2008 @@
+{
+  "trained_at": "2026-11-13T15:57:19",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "epochs": 30,
+  "train_seconds": 125.36627888679504,
+  "parameters": 2380616,
+  "class_names": [
+    "tshirt",
+    "pants",
+    "pullover",
+    "dress",
+    "coat",
+    "shirt",
+    "skirt",
+    "shoes"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.6234531328082085,
+      "train_acc": 0.4326171875,
+      "val_loss": 1.8498085737228394,
+      "val_acc": 0.32386363636363635,
+      "seconds": 4.209916114807129
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0446464400738478,
+      "train_acc": 0.6787109375,
+      "val_loss": 0.49373629689216614,
+      "val_acc": 0.8409090909090909,
+      "seconds": 8.330362319946289
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.7446123119443655,
+      "train_acc": 0.828125,
+      "val_loss": 0.2304634004831314,
+      "val_acc": 0.8920454545454546,
+      "seconds": 13.087774276733398
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6038804790005088,
+      "train_acc": 0.90234375,
+      "val_loss": 0.31027573347091675,
+      "val_acc": 0.9090909090909091,
+      "seconds": 17.30179238319397
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.543835592456162,
+      "train_acc": 0.91796875,
+      "val_loss": 0.2699229419231415,
+      "val_acc": 0.9147727272727273,
+      "seconds": 21.633387804031372
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.527451085858047,
+      "train_acc": 0.9287109375,
+      "val_loss": 0.22586727142333984,
+      "val_acc": 0.9375,
+      "seconds": 25.564071655273438
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4948711032047868,
+      "train_acc": 0.9453125,
+      "val_loss": 0.08950608223676682,
+      "val_acc": 0.9943181818181818,
+      "seconds": 29.671900510787964
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.46278183721005917,
+      "train_acc": 0.955078125,
+      "val_loss": 0.10655584186315536,
+      "val_acc": 0.9772727272727273,
+      "seconds": 33.138224840164185
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.4319790983572602,
+      "train_acc": 0.9716796875,
+      "val_loss": 0.1158713549375534,
+      "val_acc": 0.9886363636363636,
+      "seconds": 37.23084306716919
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.42621095571666956,
+      "train_acc": 0.970703125,
+      "val_loss": 0.07721613347530365,
+      "val_acc": 0.9886363636363636,
+      "seconds": 41.44279599189758
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.40429962053894997,
+      "train_acc": 0.9775390625,
+      "val_loss": 0.054112255573272705,
+      "val_acc": 1.0,
+      "seconds": 45.754236459732056
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.40209223330020905,
+      "train_acc": 0.9814453125,
+      "val_loss": 0.05217461287975311,
+      "val_acc": 1.0,
+      "seconds": 50.20214056968689
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.4067010711878538,
+      "train_acc": 0.974609375,
+      "val_loss": 0.05327101796865463,
+      "val_acc": 1.0,
+      "seconds": 54.46036505699158
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.3769566435366869,
+      "train_acc": 0.9931640625,
+      "val_loss": 0.0505562424659729,
+      "val_acc": 1.0,
+      "seconds": 58.58126258850098
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.3757761772722006,
+      "train_acc": 0.98828125,
+      "val_loss": 0.04075944051146507,
+      "val_acc": 1.0,
+      "seconds": 62.6052303314209
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.35840610694140196,
+      "train_acc": 0.994140625,
+      "val_loss": 0.03682359680533409,
+      "val_acc": 1.0,
+      "seconds": 66.80392622947693
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.35232439171522856,
+      "train_acc": 0.9951171875,
+      "val_loss": 0.04541736841201782,
+      "val_acc": 0.9943181818181818,
+      "seconds": 71.11518120765686
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.3559235967695713,
+      "train_acc": 0.9951171875,
+      "val_loss": 0.03969324007630348,
+      "val_acc": 1.0,
+      "seconds": 75.43303155899048
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.3417601464316249,
+      "train_acc": 0.9970703125,
+      "val_loss": 0.04215404763817787,
+      "val_acc": 1.0,
+      "seconds": 79.47686266899109
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.3395191542804241,
+      "train_acc": 0.9990234375,
+      "val_loss": 0.029692018404603004,
+      "val_acc": 1.0,
+      "seconds": 83.8156361579895
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.34144254960119724,
+      "train_acc": 0.9931640625,
+      "val_loss": 0.025165511295199394,
+      "val_acc": 1.0,
+      "seconds": 87.87743353843689
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.3330962974578142,
+      "train_acc": 0.998046875,
+      "val_loss": 0.03401333466172218,
+      "val_acc": 1.0,
+      "seconds": 92.15011024475098
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.33399181347340345,
+      "train_acc": 0.99609375,
+      "val_loss": 0.02670663595199585,
+      "val_acc": 1.0,
+      "seconds": 96.2414939403534
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.32775023858994246,
+      "train_acc": 0.9970703125,
+      "val_loss": 0.03394655883312225,
+      "val_acc": 1.0,
+      "seconds": 100.29866886138916
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.32722156029194593,
+      "train_acc": 0.998046875,
+      "val_loss": 0.030495423823595047,
+      "val_acc": 1.0,
+      "seconds": 104.49908995628357
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.32195214554667473,
+      "train_acc": 0.9990234375,
+      "val_loss": 0.029706012457609177,
+      "val_acc": 1.0,
+      "seconds": 108.56940460205078
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.32527147326618433,
+      "train_acc": 0.998046875,
+      "val_loss": 0.029878435656428337,
+      "val_acc": 1.0,
+      "seconds": 112.73905158042908
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.32131477259099483,
+      "train_acc": 0.9990234375,
+      "val_loss": 0.029002314433455467,
+      "val_acc": 1.0,
+      "seconds": 116.97883534431458
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.3240154758095741,
+      "train_acc": 1.0,
+      "val_loss": 0.030263245105743408,
+      "val_acc": 1.0,
+      "seconds": 121.18106818199158
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.3200247222557664,
+      "train_acc": 1.0,
+      "val_loss": 0.026991767808794975,
+      "val_acc": 1.0,
+      "seconds": 125.36228775978088
+    }
+  ],
+  "best_val_acc": 1.0,
+  "n_train": 1024,
+  "n_val": 176,
+  "n_test": 240,
+  "test_acc": 1.0,
+  "confusion_matrix": [
+    [
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30
+    ]
+  ],
+  "per_class_acc": {
+    "tshirt": 1.0,
+    "pants": 1.0,
+    "pullover": 1.0,
+    "dress": 1.0,
+    "coat": 1.0,
+    "shirt": 1.0,
+    "skirt": 1.0,
+    "shoes": 1.0
+  },
+  "styles": {
+    "centered": {
+      "n": 40,
+      "accuracy": 1.0,
+      "mean_confidence": 0.9774392828345299,
+      "mistakes": []
+    },
+    "corner": {
+      "n": 40,
+      "accuracy": 1.0,
+      "mean_confidence": 0.9790660440921783,
+      "mistakes": []
+    },
+    "thin": {
+      "n": 40,
+      "accuracy": 0.725,
+      "mean_confidence": 0.7137997537851334,
+      "mistakes": [
+        "tshirt->coat (48%)",
+        "tshirt->pants (82%)",
+        "tshirt->coat (37%)",
+        "pullover->pants (28%)",
+        "dress->pants (51%)",
+        "coat->pants (69%)",
+        "coat->pants (65%)",
+        "shirt->pants (67%)",
+        "shirt->pants (64%)",
+        "shirt->pants (53%)",
+        "skirt->dress (54%)"
+      ]
+    },
+    "thick": {
+      "n": 40,
+      "accuracy": 0.9,
+      "mean_confidence": 0.8374327942728996,
+      "mistakes": [
+        "dress->skirt (37%)",
+        "dress->skirt (46%)",
+        "shirt->pullover (39%)",
+        "shirt->pullover (43%)"
+      ]
+    },
+    "messy": {
+      "n": 40,
+      "accuracy": 1.0,
+      "mean_confidence": 0.8275824032723904,
+      "mistakes": []
+    }
+  },
+  "style_predictions": [
+    {
+      "asset_id": "tshirt_centered_5000_0000",
+      "style": "centered",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9824649691581726,
+      "true_prob": 0.9824649691581726
+    },
+    {
+      "asset_id": "tshirt_centered_5000_0001",
+      "style": "centered",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9917587637901306,
+      "true_prob": 0.9917587637901306
+    },
+    {
+      "asset_id": "tshirt_centered_5000_0002",
+      "style": "centered",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9929717183113098,
+      "true_prob": 0.9929717183113098
+    },
+    {
+      "asset_id": "tshirt_centered_5000_0003",
+      "style": "centered",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9820153713226318,
+      "true_prob": 0.9820153713226318
+    },
+    {
+      "asset_id": "tshirt_centered_5000_0004",
+      "style": "centered",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9828689694404602,
+      "true_prob": 0.9828689694404602
+    },
+    {
+      "asset_id": "pants_centered_5000_0000",
+      "style": "centered",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9635688662528992,
+      "true_prob": 0.9635688662528992
+    },
+    {
+      "asset_id": "pants_centered_5000_0001",
+      "style": "centered",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9722287058830261,
+      "true_prob": 0.9722287058830261
+    },
+    {
+      "asset_id": "pants_centered_5000_0002",
+      "style": "centered",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9823459982872009,
+      "true_prob": 0.9823459982872009
+    },
+    {
+      "asset_id": "pants_centered_5000_0003",
+      "style": "centered",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9541609287261963,
+      "true_prob": 0.9541609287261963
+    },
+    {
+      "asset_id": "pants_centered_5000_0004",
+      "style": "centered",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9662758708000183,
+      "true_prob": 0.9662758708000183
+    },
+    {
+      "asset_id": "pullover_centered_5000_0000",
+      "style": "centered",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9869711399078369,
+      "true_prob": 0.9869711399078369
+    },
+    {
+      "asset_id": "pullover_centered_5000_0001",
+      "style": "centered",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9303205013275146,
+      "true_prob": 0.9303205013275146
+    },
+    {
+      "asset_id": "pullover_centered_5000_0002",
+      "style": "centered",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9445511698722839,
+      "true_prob": 0.9445511698722839
+    },
+    {
+      "asset_id": "pullover_centered_5000_0003",
+      "style": "centered",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9880240559577942,
+      "true_prob": 0.9880240559577942
+    },
+    {
+      "asset_id": "pullover_centered_5000_0004",
+      "style": "centered",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9779532551765442,
+      "true_prob": 0.9779532551765442
+    },
+    {
+      "asset_id": "dress_centered_5000_0000",
+      "style": "centered",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9910050630569458,
+      "true_prob": 0.9910050630569458
+    },
+    {
+      "asset_id": "dress_centered_5000_0001",
+      "style": "centered",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9758696556091309,
+      "true_prob": 0.9758696556091309
+    },
+    {
+      "asset_id": "dress_centered_5000_0002",
+      "style": "centered",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9268770217895508,
+      "true_prob": 0.9268770217895508
+    },
+    {
+      "asset_id": "dress_centered_5000_0003",
+      "style": "centered",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.973285973072052,
+      "true_prob": 0.973285973072052
+    },
+    {
+      "asset_id": "dress_centered_5000_0004",
+      "style": "centered",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9586014151573181,
+      "true_prob": 0.9586014151573181
+    },
+    {
+      "asset_id": "coat_centered_5000_0000",
+      "style": "centered",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.987673819065094,
+      "true_prob": 0.987673819065094
+    },
+    {
+      "asset_id": "coat_centered_5000_0001",
+      "style": "centered",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9923655390739441,
+      "true_prob": 0.9923655390739441
+    },
+    {
+      "asset_id": "coat_centered_5000_0002",
+      "style": "centered",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9683058857917786,
+      "true_prob": 0.9683058857917786
+    },
+    {
+      "asset_id": "coat_centered_5000_0003",
+      "style": "centered",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9941021800041199,
+      "true_prob": 0.9941021800041199
+    },
+    {
+      "asset_id": "coat_centered_5000_0004",
+      "style": "centered",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.994219183921814,
+      "true_prob": 0.994219183921814
+    },
+    {
+      "asset_id": "shirt_centered_5000_0000",
+      "style": "centered",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9829221963882446,
+      "true_prob": 0.9829221963882446
+    },
+    {
+      "asset_id": "shirt_centered_5000_0001",
+      "style": "centered",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9630572199821472,
+      "true_prob": 0.9630572199821472
+    },
+    {
+      "asset_id": "shirt_centered_5000_0002",
+      "style": "centered",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9895758628845215,
+      "true_prob": 0.9895758628845215
+    },
+    {
+      "asset_id": "shirt_centered_5000_0003",
+      "style": "centered",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.977831244468689,
+      "true_prob": 0.977831244468689
+    },
+    {
+      "asset_id": "shirt_centered_5000_0004",
+      "style": "centered",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9839268326759338,
+      "true_prob": 0.9839268326759338
+    },
+    {
+      "asset_id": "skirt_centered_5000_0000",
+      "style": "centered",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9823578596115112,
+      "true_prob": 0.9823578596115112
+    },
+    {
+      "asset_id": "skirt_centered_5000_0001",
+      "style": "centered",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9825678467750549,
+      "true_prob": 0.9825678467750549
+    },
+    {
+      "asset_id": "skirt_centered_5000_0002",
+      "style": "centered",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9913903474807739,
+      "true_prob": 0.9913903474807739
+    },
+    {
+      "asset_id": "skirt_centered_5000_0003",
+      "style": "centered",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9892828464508057,
+      "true_prob": 0.9892828464508057
+    },
+    {
+      "asset_id": "skirt_centered_5000_0004",
+      "style": "centered",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9768089652061462,
+      "true_prob": 0.9768089652061462
+    },
+    {
+      "asset_id": "shoes_centered_5000_0000",
+      "style": "centered",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9813399910926819,
+      "true_prob": 0.9813399910926819
+    },
+    {
+      "asset_id": "shoes_centered_5000_0001",
+      "style": "centered",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9719511270523071,
+      "true_prob": 0.9719511270523071
+    },
+    {
+      "asset_id": "shoes_centered_5000_0002",
+      "style": "centered",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9844273924827576,
+      "true_prob": 0.9844273924827576
+    },
+    {
+      "asset_id": "shoes_centered_5000_0003",
+      "style": "centered",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9814891219139099,
+      "true_prob": 0.9814891219139099
+    },
+    {
+      "asset_id": "shoes_centered_5000_0004",
+      "style": "centered",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9978564381599426,
+      "true_prob": 0.9978564381599426
+    },
+    {
+      "asset_id": "tshirt_corner_5001_0000",
+      "style": "corner",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9881736636161804,
+      "true_prob": 0.9881736636161804
+    },
+    {
+      "asset_id": "tshirt_corner_5001_0001",
+      "style": "corner",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9895495176315308,
+      "true_prob": 0.9895495176315308
+    },
+    {
+      "asset_id": "tshirt_corner_5001_0002",
+      "style": "corner",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9805648922920227,
+      "true_prob": 0.9805648922920227
+    },
+    {
+      "asset_id": "tshirt_corner_5001_0003",
+      "style": "corner",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9897323250770569,
+      "true_prob": 0.9897323250770569
+    },
+    {
+      "asset_id": "tshirt_corner_5001_0004",
+      "style": "corner",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9832494258880615,
+      "true_prob": 0.9832494258880615
+    },
+    {
+      "asset_id": "pants_corner_5001_0000",
+      "style": "corner",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9741820096969604,
+      "true_prob": 0.9741820096969604
+    },
+    {
+      "asset_id": "pants_corner_5001_0001",
+      "style": "corner",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9641988277435303,
+      "true_prob": 0.9641988277435303
+    },
+    {
+      "asset_id": "pants_corner_5001_0002",
+      "style": "corner",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9507997632026672,
+      "true_prob": 0.9507997632026672
+    },
+    {
+      "asset_id": "pants_corner_5001_0003",
+      "style": "corner",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9632198214530945,
+      "true_prob": 0.9632198214530945
+    },
+    {
+      "asset_id": "pants_corner_5001_0004",
+      "style": "corner",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9723289012908936,
+      "true_prob": 0.9723289012908936
+    },
+    {
+      "asset_id": "pullover_corner_5001_0000",
+      "style": "corner",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9934802055358887,
+      "true_prob": 0.9934802055358887
+    },
+    {
+      "asset_id": "pullover_corner_5001_0001",
+      "style": "corner",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9757816791534424,
+      "true_prob": 0.9757816791534424
+    },
+    {
+      "asset_id": "pullover_corner_5001_0002",
+      "style": "corner",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9785103797912598,
+      "true_prob": 0.9785103797912598
+    },
+    {
+      "asset_id": "pullover_corner_5001_0003",
+      "style": "corner",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9772682785987854,
+      "true_prob": 0.9772682785987854
+    },
+    {
+      "asset_id": "pullover_corner_5001_0004",
+      "style": "corner",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9828858971595764,
+      "true_prob": 0.9828858971595764
+    },
+    {
+      "asset_id": "dress_corner_5001_0000",
+      "style": "corner",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9364729523658752,
+      "true_prob": 0.9364729523658752
+    },
+    {
+      "asset_id": "dress_corner_5001_0001",
+      "style": "corner",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9636382460594177,
+      "true_prob": 0.9636382460594177
+    },
+    {
+      "asset_id": "dress_corner_5001_0002",
+      "style": "corner",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9830012321472168,
+      "true_prob": 0.9830012321472168
+    },
+    {
+      "asset_id": "dress_corner_5001_0003",
+      "style": "corner",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.983617901802063,
+      "true_prob": 0.983617901802063
+    },
+    {
+      "asset_id": "dress_corner_5001_0004",
+      "style": "corner",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.98244309425354,
+      "true_prob": 0.98244309425354
+    },
+    {
+      "asset_id": "coat_corner_5001_0000",
+      "style": "corner",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9883652925491333,
+      "true_prob": 0.9883652925491333
+    },
+    {
+      "asset_id": "coat_corner_5001_0001",
+      "style": "corner",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.990031361579895,
+      "true_prob": 0.990031361579895
+    },
+    {
+      "asset_id": "coat_corner_5001_0002",
+      "style": "corner",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9912976026535034,
+      "true_prob": 0.9912976026535034
+    },
+    {
+      "asset_id": "coat_corner_5001_0003",
+      "style": "corner",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9778984785079956,
+      "true_prob": 0.9778984785079956
+    },
+    {
+      "asset_id": "coat_corner_5001_0004",
+      "style": "corner",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9869102835655212,
+      "true_prob": 0.9869102835655212
+    },
+    {
+      "asset_id": "shirt_corner_5001_0000",
+      "style": "corner",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9757994413375854,
+      "true_prob": 0.9757994413375854
+    },
+    {
+      "asset_id": "shirt_corner_5001_0001",
+      "style": "corner",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9854590892791748,
+      "true_prob": 0.9854590892791748
+    },
+    {
+      "asset_id": "shirt_corner_5001_0002",
+      "style": "corner",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9397075772285461,
+      "true_prob": 0.9397075772285461
+    },
+    {
+      "asset_id": "shirt_corner_5001_0003",
+      "style": "corner",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9918720126152039,
+      "true_prob": 0.9918720126152039
+    },
+    {
+      "asset_id": "shirt_corner_5001_0004",
+      "style": "corner",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9875265955924988,
+      "true_prob": 0.9875265955924988
+    },
+    {
+      "asset_id": "skirt_corner_5001_0000",
+      "style": "corner",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9767754077911377,
+      "true_prob": 0.9767754077911377
+    },
+    {
+      "asset_id": "skirt_corner_5001_0001",
+      "style": "corner",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9883807897567749,
+      "true_prob": 0.9883807897567749
+    },
+    {
+      "asset_id": "skirt_corner_5001_0002",
+      "style": "corner",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9890812635421753,
+      "true_prob": 0.9890812635421753
+    },
+    {
+      "asset_id": "skirt_corner_5001_0003",
+      "style": "corner",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9787648916244507,
+      "true_prob": 0.9787648916244507
+    },
+    {
+      "asset_id": "skirt_corner_5001_0004",
+      "style": "corner",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9561753869056702,
+      "true_prob": 0.9561753869056702
+    },
+    {
+      "asset_id": "shoes_corner_5001_0000",
+      "style": "corner",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9940430521965027,
+      "true_prob": 0.9940430521965027
+    },
+    {
+      "asset_id": "shoes_corner_5001_0001",
+      "style": "corner",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9780278205871582,
+      "true_prob": 0.9780278205871582
+    },
+    {
+      "asset_id": "shoes_corner_5001_0002",
+      "style": "corner",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9902389049530029,
+      "true_prob": 0.9902389049530029
+    },
+    {
+      "asset_id": "shoes_corner_5001_0003",
+      "style": "corner",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9920001029968262,
+      "true_prob": 0.9920001029968262
+    },
+    {
+      "asset_id": "shoes_corner_5001_0004",
+      "style": "corner",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9911873936653137,
+      "true_prob": 0.9911873936653137
+    },
+    {
+      "asset_id": "tshirt_thin_5002_0000",
+      "style": "thin",
+      "label": "tshirt",
+      "pred": "coat",
+      "confidence": 0.48294946551322937,
+      "true_prob": 0.3056550920009613
+    },
+    {
+      "asset_id": "tshirt_thin_5002_0001",
+      "style": "thin",
+      "label": "tshirt",
+      "pred": "pants",
+      "confidence": 0.8242141604423523,
+      "true_prob": 0.023009877651929855
+    },
+    {
+      "asset_id": "tshirt_thin_5002_0002",
+      "style": "thin",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.5995721817016602,
+      "true_prob": 0.5995721817016602
+    },
+    {
+      "asset_id": "tshirt_thin_5002_0003",
+      "style": "thin",
+      "label": "tshirt",
+      "pred": "coat",
+      "confidence": 0.3729235529899597,
+      "true_prob": 0.11835870146751404
+    },
+    {
+      "asset_id": "tshirt_thin_5002_0004",
+      "style": "thin",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.34677648544311523,
+      "true_prob": 0.34677648544311523
+    },
+    {
+      "asset_id": "pants_thin_5002_0000",
+      "style": "thin",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9524691104888916,
+      "true_prob": 0.9524691104888916
+    },
+    {
+      "asset_id": "pants_thin_5002_0001",
+      "style": "thin",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9550965428352356,
+      "true_prob": 0.9550965428352356
+    },
+    {
+      "asset_id": "pants_thin_5002_0002",
+      "style": "thin",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9625825881958008,
+      "true_prob": 0.9625825881958008
+    },
+    {
+      "asset_id": "pants_thin_5002_0003",
+      "style": "thin",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9624486565589905,
+      "true_prob": 0.9624486565589905
+    },
+    {
+      "asset_id": "pants_thin_5002_0004",
+      "style": "thin",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9294778108596802,
+      "true_prob": 0.9294778108596802
+    },
+    {
+      "asset_id": "pullover_thin_5002_0000",
+      "style": "thin",
+      "label": "pullover",
+      "pred": "pants",
+      "confidence": 0.27766233682632446,
+      "true_prob": 0.162833571434021
+    },
+    {
+      "asset_id": "pullover_thin_5002_0001",
+      "style": "thin",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.2667742073535919,
+      "true_prob": 0.2667742073535919
+    },
+    {
+      "asset_id": "pullover_thin_5002_0002",
+      "style": "thin",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.3047938346862793,
+      "true_prob": 0.3047938346862793
+    },
+    {
+      "asset_id": "pullover_thin_5002_0003",
+      "style": "thin",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.3739698827266693,
+      "true_prob": 0.3739698827266693
+    },
+    {
+      "asset_id": "pullover_thin_5002_0004",
+      "style": "thin",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.6221718192100525,
+      "true_prob": 0.6221718192100525
+    },
+    {
+      "asset_id": "dress_thin_5002_0000",
+      "style": "thin",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9914221167564392,
+      "true_prob": 0.9914221167564392
+    },
+    {
+      "asset_id": "dress_thin_5002_0001",
+      "style": "thin",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.6983630061149597,
+      "true_prob": 0.6983630061149597
+    },
+    {
+      "asset_id": "dress_thin_5002_0002",
+      "style": "thin",
+      "label": "dress",
+      "pred": "pants",
+      "confidence": 0.5066513419151306,
+      "true_prob": 0.31548964977264404
+    },
+    {
+      "asset_id": "dress_thin_5002_0003",
+      "style": "thin",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9869776368141174,
+      "true_prob": 0.9869776368141174
+    },
+    {
+      "asset_id": "dress_thin_5002_0004",
+      "style": "thin",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9333390593528748,
+      "true_prob": 0.9333390593528748
+    },
+    {
+      "asset_id": "coat_thin_5002_0000",
+      "style": "thin",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.7110394239425659,
+      "true_prob": 0.7110394239425659
+    },
+    {
+      "asset_id": "coat_thin_5002_0001",
+      "style": "thin",
+      "label": "coat",
+      "pred": "pants",
+      "confidence": 0.6910317540168762,
+      "true_prob": 0.10199270397424698
+    },
+    {
+      "asset_id": "coat_thin_5002_0002",
+      "style": "thin",
+      "label": "coat",
+      "pred": "pants",
+      "confidence": 0.6535890102386475,
+      "true_prob": 0.14539648592472076
+    },
+    {
+      "asset_id": "coat_thin_5002_0003",
+      "style": "thin",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.739723801612854,
+      "true_prob": 0.739723801612854
+    },
+    {
+      "asset_id": "coat_thin_5002_0004",
+      "style": "thin",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.931488037109375,
+      "true_prob": 0.931488037109375
+    },
+    {
+      "asset_id": "shirt_thin_5002_0000",
+      "style": "thin",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.7418124079704285,
+      "true_prob": 0.7418124079704285
+    },
+    {
+      "asset_id": "shirt_thin_5002_0001",
+      "style": "thin",
+      "label": "shirt",
+      "pred": "pants",
+      "confidence": 0.6703438758850098,
+      "true_prob": 0.1781991720199585
+    },
+    {
+      "asset_id": "shirt_thin_5002_0002",
+      "style": "thin",
+      "label": "shirt",
+      "pred": "pants",
+      "confidence": 0.6369405388832092,
+      "true_prob": 0.20614488422870636
+    },
+    {
+      "asset_id": "shirt_thin_5002_0003",
+      "style": "thin",
+      "label": "shirt",
+      "pred": "pants",
+      "confidence": 0.5306636095046997,
+      "true_prob": 0.29493600130081177
+    },
+    {
+      "asset_id": "shirt_thin_5002_0004",
+      "style": "thin",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.8294013142585754,
+      "true_prob": 0.8294013142585754
+    },
+    {
+      "asset_id": "skirt_thin_5002_0000",
+      "style": "thin",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.7964043021202087,
+      "true_prob": 0.7964043021202087
+    },
+    {
+      "asset_id": "skirt_thin_5002_0001",
+      "style": "thin",
+      "label": "skirt",
+      "pred": "dress",
+      "confidence": 0.5406957268714905,
+      "true_prob": 0.14054735004901886
+    },
+    {
+      "asset_id": "skirt_thin_5002_0002",
+      "style": "thin",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.46872058510780334,
+      "true_prob": 0.46872058510780334
+    },
+    {
+      "asset_id": "skirt_thin_5002_0003",
+      "style": "thin",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.6270585060119629,
+      "true_prob": 0.6270585060119629
+    },
+    {
+      "asset_id": "skirt_thin_5002_0004",
+      "style": "thin",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.8678274750709534,
+      "true_prob": 0.8678274750709534
+    },
+    {
+      "asset_id": "shoes_thin_5002_0000",
+      "style": "thin",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.975277304649353,
+      "true_prob": 0.975277304649353
+    },
+    {
+      "asset_id": "shoes_thin_5002_0001",
+      "style": "thin",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9944567680358887,
+      "true_prob": 0.9944567680358887
+    },
+    {
+      "asset_id": "shoes_thin_5002_0002",
+      "style": "thin",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.8167386054992676,
+      "true_prob": 0.8167386054992676
+    },
+    {
+      "asset_id": "shoes_thin_5002_0003",
+      "style": "thin",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9960464835166931,
+      "true_prob": 0.9960464835166931
+    },
+    {
+      "asset_id": "shoes_thin_5002_0004",
+      "style": "thin",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9820948243141174,
+      "true_prob": 0.9820948243141174
+    },
+    {
+      "asset_id": "tshirt_thick_5003_0000",
+      "style": "thick",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9926348328590393,
+      "true_prob": 0.9926348328590393
+    },
+    {
+      "asset_id": "tshirt_thick_5003_0001",
+      "style": "thick",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9937500357627869,
+      "true_prob": 0.9937500357627869
+    },
+    {
+      "asset_id": "tshirt_thick_5003_0002",
+      "style": "thick",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9978808760643005,
+      "true_prob": 0.9978808760643005
+    },
+    {
+      "asset_id": "tshirt_thick_5003_0003",
+      "style": "thick",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.8808677792549133,
+      "true_prob": 0.8808677792549133
+    },
+    {
+      "asset_id": "tshirt_thick_5003_0004",
+      "style": "thick",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9899517893791199,
+      "true_prob": 0.9899517893791199
+    },
+    {
+      "asset_id": "pants_thick_5003_0000",
+      "style": "thick",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.7392411231994629,
+      "true_prob": 0.7392411231994629
+    },
+    {
+      "asset_id": "pants_thick_5003_0001",
+      "style": "thick",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9152829647064209,
+      "true_prob": 0.9152829647064209
+    },
+    {
+      "asset_id": "pants_thick_5003_0002",
+      "style": "thick",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.7629497647285461,
+      "true_prob": 0.7629497647285461
+    },
+    {
+      "asset_id": "pants_thick_5003_0003",
+      "style": "thick",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.7383500933647156,
+      "true_prob": 0.7383500933647156
+    },
+    {
+      "asset_id": "pants_thick_5003_0004",
+      "style": "thick",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9228902459144592,
+      "true_prob": 0.9228902459144592
+    },
+    {
+      "asset_id": "pullover_thick_5003_0000",
+      "style": "thick",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.804474413394928,
+      "true_prob": 0.804474413394928
+    },
+    {
+      "asset_id": "pullover_thick_5003_0001",
+      "style": "thick",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9850829839706421,
+      "true_prob": 0.9850829839706421
+    },
+    {
+      "asset_id": "pullover_thick_5003_0002",
+      "style": "thick",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9792795181274414,
+      "true_prob": 0.9792795181274414
+    },
+    {
+      "asset_id": "pullover_thick_5003_0003",
+      "style": "thick",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.8212044835090637,
+      "true_prob": 0.8212044835090637
+    },
+    {
+      "asset_id": "pullover_thick_5003_0004",
+      "style": "thick",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.9885498881340027,
+      "true_prob": 0.9885498881340027
+    },
+    {
+      "asset_id": "dress_thick_5003_0000",
+      "style": "thick",
+      "label": "dress",
+      "pred": "skirt",
+      "confidence": 0.37343358993530273,
+      "true_prob": 0.3710472881793976
+    },
+    {
+      "asset_id": "dress_thick_5003_0001",
+      "style": "thick",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9553670287132263,
+      "true_prob": 0.9553670287132263
+    },
+    {
+      "asset_id": "dress_thick_5003_0002",
+      "style": "thick",
+      "label": "dress",
+      "pred": "skirt",
+      "confidence": 0.4562089741230011,
+      "true_prob": 0.34586310386657715
+    },
+    {
+      "asset_id": "dress_thick_5003_0003",
+      "style": "thick",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.9023627042770386,
+      "true_prob": 0.9023627042770386
+    },
+    {
+      "asset_id": "dress_thick_5003_0004",
+      "style": "thick",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.870464026927948,
+      "true_prob": 0.870464026927948
+    },
+    {
+      "asset_id": "coat_thick_5003_0000",
+      "style": "thick",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.9035034775733948,
+      "true_prob": 0.9035034775733948
+    },
+    {
+      "asset_id": "coat_thick_5003_0001",
+      "style": "thick",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.7972740530967712,
+      "true_prob": 0.7972740530967712
+    },
+    {
+      "asset_id": "coat_thick_5003_0002",
+      "style": "thick",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.7259249687194824,
+      "true_prob": 0.7259249687194824
+    },
+    {
+      "asset_id": "coat_thick_5003_0003",
+      "style": "thick",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.8902026414871216,
+      "true_prob": 0.8902026414871216
+    },
+    {
+      "asset_id": "coat_thick_5003_0004",
+      "style": "thick",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.7027326226234436,
+      "true_prob": 0.7027326226234436
+    },
+    {
+      "asset_id": "shirt_thick_5003_0000",
+      "style": "thick",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.5928483009338379,
+      "true_prob": 0.5928483009338379
+    },
+    {
+      "asset_id": "shirt_thick_5003_0001",
+      "style": "thick",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.7704045176506042,
+      "true_prob": 0.7704045176506042
+    },
+    {
+      "asset_id": "shirt_thick_5003_0002",
+      "style": "thick",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.3363249599933624,
+      "true_prob": 0.3363249599933624
+    },
+    {
+      "asset_id": "shirt_thick_5003_0003",
+      "style": "thick",
+      "label": "shirt",
+      "pred": "pullover",
+      "confidence": 0.38684356212615967,
+      "true_prob": 0.11172530800104141
+    },
+    {
+      "asset_id": "shirt_thick_5003_0004",
+      "style": "thick",
+      "label": "shirt",
+      "pred": "pullover",
+      "confidence": 0.4340910315513611,
+      "true_prob": 0.39358773827552795
+    },
+    {
+      "asset_id": "skirt_thick_5003_0000",
+      "style": "thick",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9739072322845459,
+      "true_prob": 0.9739072322845459
+    },
+    {
+      "asset_id": "skirt_thick_5003_0001",
+      "style": "thick",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9844228625297546,
+      "true_prob": 0.9844228625297546
+    },
+    {
+      "asset_id": "skirt_thick_5003_0002",
+      "style": "thick",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.98207688331604,
+      "true_prob": 0.98207688331604
+    },
+    {
+      "asset_id": "skirt_thick_5003_0003",
+      "style": "thick",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9716191291809082,
+      "true_prob": 0.9716191291809082
+    },
+    {
+      "asset_id": "skirt_thick_5003_0004",
+      "style": "thick",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9839472770690918,
+      "true_prob": 0.9839472770690918
+    },
+    {
+      "asset_id": "shoes_thick_5003_0000",
+      "style": "thick",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9994001388549805,
+      "true_prob": 0.9994001388549805
+    },
+    {
+      "asset_id": "shoes_thick_5003_0001",
+      "style": "thick",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9985218644142151,
+      "true_prob": 0.9985218644142151
+    },
+    {
+      "asset_id": "shoes_thick_5003_0002",
+      "style": "thick",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9976910352706909,
+      "true_prob": 0.9976910352706909
+    },
+    {
+      "asset_id": "shoes_thick_5003_0003",
+      "style": "thick",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.998223602771759,
+      "true_prob": 0.998223602771759
+    },
+    {
+      "asset_id": "shoes_thick_5003_0004",
+      "style": "thick",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9971244931221008,
+      "true_prob": 0.9971244931221008
+    },
+    {
+      "asset_id": "tshirt_messy_5004_0000",
+      "style": "messy",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.914411187171936,
+      "true_prob": 0.914411187171936
+    },
+    {
+      "asset_id": "tshirt_messy_5004_0001",
+      "style": "messy",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.7524250149726868,
+      "true_prob": 0.7524250149726868
+    },
+    {
+      "asset_id": "tshirt_messy_5004_0002",
+      "style": "messy",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9876135587692261,
+      "true_prob": 0.9876135587692261
+    },
+    {
+      "asset_id": "tshirt_messy_5004_0003",
+      "style": "messy",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9924308657646179,
+      "true_prob": 0.9924308657646179
+    },
+    {
+      "asset_id": "tshirt_messy_5004_0004",
+      "style": "messy",
+      "label": "tshirt",
+      "pred": "tshirt",
+      "confidence": 0.9567570686340332,
+      "true_prob": 0.9567570686340332
+    },
+    {
+      "asset_id": "pants_messy_5004_0000",
+      "style": "messy",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.9345750212669373,
+      "true_prob": 0.9345750212669373
+    },
+    {
+      "asset_id": "pants_messy_5004_0001",
+      "style": "messy",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.6526353359222412,
+      "true_prob": 0.6526353359222412
+    },
+    {
+      "asset_id": "pants_messy_5004_0002",
+      "style": "messy",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.7918474674224854,
+      "true_prob": 0.7918474674224854
+    },
+    {
+      "asset_id": "pants_messy_5004_0003",
+      "style": "messy",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.8492476344108582,
+      "true_prob": 0.8492476344108582
+    },
+    {
+      "asset_id": "pants_messy_5004_0004",
+      "style": "messy",
+      "label": "pants",
+      "pred": "pants",
+      "confidence": 0.7100184559822083,
+      "true_prob": 0.7100184559822083
+    },
+    {
+      "asset_id": "pullover_messy_5004_0000",
+      "style": "messy",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.58095782995224,
+      "true_prob": 0.58095782995224
+    },
+    {
+      "asset_id": "pullover_messy_5004_0001",
+      "style": "messy",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.7672404646873474,
+      "true_prob": 0.7672404646873474
+    },
+    {
+      "asset_id": "pullover_messy_5004_0002",
+      "style": "messy",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.8628159165382385,
+      "true_prob": 0.8628159165382385
+    },
+    {
+      "asset_id": "pullover_messy_5004_0003",
+      "style": "messy",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.8603652715682983,
+      "true_prob": 0.8603652715682983
+    },
+    {
+      "asset_id": "pullover_messy_5004_0004",
+      "style": "messy",
+      "label": "pullover",
+      "pred": "pullover",
+      "confidence": 0.7578452229499817,
+      "true_prob": 0.7578452229499817
+    },
+    {
+      "asset_id": "dress_messy_5004_0000",
+      "style": "messy",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.6113400459289551,
+      "true_prob": 0.6113400459289551
+    },
+    {
+      "asset_id": "dress_messy_5004_0001",
+      "style": "messy",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.8682420253753662,
+      "true_prob": 0.8682420253753662
+    },
+    {
+      "asset_id": "dress_messy_5004_0002",
+      "style": "messy",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.7100391983985901,
+      "true_prob": 0.7100391983985901
+    },
+    {
+      "asset_id": "dress_messy_5004_0003",
+      "style": "messy",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.5491718649864197,
+      "true_prob": 0.5491718649864197
+    },
+    {
+      "asset_id": "dress_messy_5004_0004",
+      "style": "messy",
+      "label": "dress",
+      "pred": "dress",
+      "confidence": 0.8826300501823425,
+      "true_prob": 0.8826300501823425
+    },
+    {
+      "asset_id": "coat_messy_5004_0000",
+      "style": "messy",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.6453617811203003,
+      "true_prob": 0.6453617811203003
+    },
+    {
+      "asset_id": "coat_messy_5004_0001",
+      "style": "messy",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.7250598669052124,
+      "true_prob": 0.7250598669052124
+    },
+    {
+      "asset_id": "coat_messy_5004_0002",
+      "style": "messy",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.40511634945869446,
+      "true_prob": 0.40511634945869446
+    },
+    {
+      "asset_id": "coat_messy_5004_0003",
+      "style": "messy",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.864278256893158,
+      "true_prob": 0.864278256893158
+    },
+    {
+      "asset_id": "coat_messy_5004_0004",
+      "style": "messy",
+      "label": "coat",
+      "pred": "coat",
+      "confidence": 0.8800060749053955,
+      "true_prob": 0.8800060749053955
+    },
+    {
+      "asset_id": "shirt_messy_5004_0000",
+      "style": "messy",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.8541291952133179,
+      "true_prob": 0.8541291952133179
+    },
+    {
+      "asset_id": "shirt_messy_5004_0001",
+      "style": "messy",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.913723349571228,
+      "true_prob": 0.913723349571228
+    },
+    {
+      "asset_id": "shirt_messy_5004_0002",
+      "style": "messy",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.8666463494300842,
+      "true_prob": 0.8666463494300842
+    },
+    {
+      "asset_id": "shirt_messy_5004_0003",
+      "style": "messy",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.8812193274497986,
+      "true_prob": 0.8812193274497986
+    },
+    {
+      "asset_id": "shirt_messy_5004_0004",
+      "style": "messy",
+      "label": "shirt",
+      "pred": "shirt",
+      "confidence": 0.9772840142250061,
+      "true_prob": 0.9772840142250061
+    },
+    {
+      "asset_id": "skirt_messy_5004_0000",
+      "style": "messy",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.8523191809654236,
+      "true_prob": 0.8523191809654236
+    },
+    {
+      "asset_id": "skirt_messy_5004_0001",
+      "style": "messy",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9468124508857727,
+      "true_prob": 0.9468124508857727
+    },
+    {
+      "asset_id": "skirt_messy_5004_0002",
+      "style": "messy",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.9131842255592346,
+      "true_prob": 0.9131842255592346
+    },
+    {
+      "asset_id": "skirt_messy_5004_0003",
+      "style": "messy",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.8201807141304016,
+      "true_prob": 0.8201807141304016
+    },
+    {
+      "asset_id": "skirt_messy_5004_0004",
+      "style": "messy",
+      "label": "skirt",
+      "pred": "skirt",
+      "confidence": 0.7162259221076965,
+      "true_prob": 0.7162259221076965
+    },
+    {
+      "asset_id": "shoes_messy_5004_0000",
+      "style": "messy",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9753711223602295,
+      "true_prob": 0.9753711223602295
+    },
+    {
+      "asset_id": "shoes_messy_5004_0001",
+      "style": "messy",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9974654912948608,
+      "true_prob": 0.9974654912948608
+    },
+    {
+      "asset_id": "shoes_messy_5004_0002",
+      "style": "messy",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9503329396247864,
+      "true_prob": 0.9503329396247864
+    },
+    {
+      "asset_id": "shoes_messy_5004_0003",
+      "style": "messy",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9736655950546265,
+      "true_prob": 0.9736655950546265
+    },
+    {
+      "asset_id": "shoes_messy_5004_0004",
+      "style": "messy",
+      "label": "shoes",
+      "pred": "shoes",
+      "confidence": 0.9523044228553772,
+      "true_prob": 0.9523044228553772
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Same as requirements.txt but with the NVIDIA CUDA build of PyTorch (Windows / Linux, ~3 GB download).
+#   pip install -r requirements-gpu.txt
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.5
+
+numpy>=1.26
+streamlit>=1.50
+altair>=5
+plotly>=5.20
+pandas>=2.0
+pillow>=10
+trimesh>=4.0

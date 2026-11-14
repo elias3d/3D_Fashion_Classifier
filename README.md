@@ -2,11 +2,13 @@
 
 **Mini project: MNIST digit classifier, rebuilt in 3D.**
 
+Design a 3D garment in your browser and watch a 3D neural network guess what it is, live: T-shirt, pants, pullover, dress, coat, shirt, skirt or shoes.
+
 **Live app:** https://3dfashionclassifier.streamlit.app/ · **Code:** https://github.com/elias3d/3D_Fashion_Classifier
 
 My instructor let me change the original assignment. Instead of drawing a digit on a 2D canvas, my app takes a
-**3D garment asset from Autodesk Maya** and predicts which of **8 fashion types** it is:
-T-shirt, pants, pullover, dress, coat, shirt, skirt or shoes.
+**3D garment asset** (designed in the app, uploaded, or straight from **Autodesk Maya**) and predicts which of
+**8 fashion types** it is.
 
 The pipeline is the same idea as MNIST, but in one more dimension:
 
